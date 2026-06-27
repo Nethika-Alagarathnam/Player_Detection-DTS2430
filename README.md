@@ -1,7 +1,7 @@
 # DS5216 - Artificial Intelligence | Programming Assignment 02
 ## Football Player Detection, Tracking & Pose Estimation using YOLOv8
 
--
+---
 
 ## Overview of my Project
 
@@ -45,17 +45,17 @@ Labeling was done using **LabelImg** with YOLO format. To bootstrap labels, YOLO
 | Python | 3.10 |
 | Device | CPU only |
 | Framework | PyTorch via Ultralytics |
-| Key libraries | `ultralytics`, `opencv-python`, `numpy`, `pandas`, `matplotlib`, `seaborn`, `labelImg` |
+| Key libraries | ultralytics, opencv-python, numpy, pandas, matplotlib, seaborn, labelImg |
 
 
 
-## Notebook 1 — Frame Extraction (01_extract_frames.ipynb)
+## Notebook 1 - Frame Extraction (01_extract_frames.ipynb)
 
 Reads each video from the "Football/" folder and extracts one frame every 10 frames using OpenCV. Saves frames to "dataset/images/" with structured filenames. After extraction, images are labeled using LabelImg in YOLO format (bounding box coordinates saved as ".txt" files in "dataset/labels/").
 
 ---
 
-## Notebook 2 — YOLOv8n Training (02_train_yolov8.ipynb)
+## Notebook 2 - YOLOv8n Training (02_train_yolov8.ipynb)
 
 **Dataset split**
 
@@ -80,17 +80,17 @@ Reads each video from the "Football/" folder and extracts one frame every 10 fra
 A data.yaml file is generated automatically with paths to train/val/test splits.
 
 **Outputs generated automatically by Ultralytics**
-- results.png — loss curves, precision, recall, mAP over epochs
-- BoxPR_curve.png — Precision-Recall curve
-- confusion_matrix.png — confusion matrix
-- weights/best.pt — best checkpoint
-- weights/last.pt — final epoch checkpoint
+- results.png - loss curves, precision, recall, mAP over epochs
+- BoxPR_curve.png - Precision-Recall curve
+- confusion_matrix.png - confusion matrix
+- weights/best.pt - best checkpoint
+- weights/last.pt - final epoch checkpoint
 
-Test set evaluation is run at the end using model.val(split="test"), reporting mAP@0.50, mAP@0.50:0.95, Precision, and Recall. Results are saved to "test_results.csv".
+Test set evaluation is run at the end using model.val(split = "test"), reporting mAP@0.50, mAP@0.50:0.95, Precision, and Recall. Results are saved to "test_results.csv".
 
 ---
 
-## Notebook 3 — Pose / Keypoint Estimation (03_keypoint_pose.ipynb)
+## Notebook 3 - Pose / Keypoint Estimation (03_keypoint_pose.ipynb)
 
 Uses the pre-trained **yolov8n-pose.pt** model to detect 17 body keypoints per person across all 12 football videos.
 
@@ -117,17 +117,17 @@ Left Ankle, Right Ankle
 **What the notebook produces**
 - Annotated output video per clip saved to "output_keypoints/" with bounding boxes, player labels (P1, P2...), and colour-coded skeleton overlays
 - Screenshot saved at frame 20 of each clip to "screenshots/"
-- "keypoint_summary.csv" — per-clip summary of avg persons detected, max persons, avg keypoints visible, total frames
-- "keypoint_results.png" — 3-panel chart: avg keypoints per sport, keypoint visibility over time, persons-per-frame distribution
-- "per_keypoint_confidence.png" — horizontal bar chart of average confidence per keypoint across all clips
+- "keypoint_summary.csv" - per-clip summary of avg persons detected, max persons, avg keypoints visible, total frames
+- "keypoint_results.png" - 3-panel chart: avg keypoints per sport, keypoint visibility over time, persons-per-frame distribution
+- "per_keypoint_confidence.png" - horizontal bar chart of average confidence per keypoint across all clips
 
 Skeleton limbs are drawn with distinct colours by body region (head- yellow, torso- cyan, left arm- green, right arm- orange, hips/core- purple, left leg- light blue, right leg- pink).
 
 ---
 
-## Notebook 4 — Model Comparison (04_model_comparison.ipynb)
+## Notebook 4 - Model Comparison (04_model_comparison.ipynb)
 
-Trains a second model (**YOLOv8s — small**) on the same dataset and compares it against YOLOv8n.
+Trains a second model (**YOLOv8s - small**) on the same dataset and compares it against YOLOv8n.
 
 **YOLOv8s training configuration**
 
@@ -140,7 +140,7 @@ Trains a second model (**YOLOv8s — small**) on the same dataset and compares i
 | Device | CPU |
 | Early stopping patience | 15 epochs |
 
-Both models are evaluated on the same test split using model.val(split="test").
+Both models are evaluated on the same test split using model.val(split = "test").
 
 **Comparison metrics collected**
 
@@ -151,10 +151,10 @@ Both models are evaluated on the same test split using model.val(split="test").
 
 | File | Description |
 |---|---|
-| 01_metric_comparison.png | Grouped bar chart — all 4 metrics side by side |
+| 01_metric_comparison.png | Grouped bar chart - all 4 metrics side by side |
 | 02_loss_curves.png | Box loss, mAP@0.50, and Precision training curves for both models |
 | 03_pr_curves.png | Precision-Recall curves (side by side) |
-| 04_speed_vs_accuracy.png | Scatter plot — inference speed vs mAP@0.50 (bubble size = model size) |
+| 04_speed_vs_accuracy.png | Scatter plot - inference speed vs mAP@0.50 (bubble size = model size) |
 | comparison_results.csv | Full numeric results table |
 
 
