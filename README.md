@@ -222,6 +222,10 @@ Key outputs to review
 - **comparison/01_metric_comparison.png** - side-by-side model comparison
 - **output_keypoints/keypoint_results.png** - pose estimation summary
 - **06 - Player Detection [Bounding Box].avi** (Drive) - final annotated video
+  
+<img width="197" height="248" alt="image" src="https://github.com/user-attachments/assets/b48c08e7-a67b-4280-9a5e-f6e6d1342857" />
+<img width="541" height="450" alt="image" src="https://github.com/user-attachments/assets/41243596-6b33-46c3-9f14-70406ecae3c3" />
+<img width="832" height="832" alt="train_batch2201" src="https://github.com/user-attachments/assets/5e13d28e-97f9-4fc4-8434-c2b0d4a2cd21" />
 
 ---
 
