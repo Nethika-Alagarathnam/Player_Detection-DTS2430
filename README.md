@@ -217,7 +217,7 @@ No GPU is required. All training and inference runs on CPU.
 
 Detailed performance metrics, loss curves, Precision-Recall curves, and qualitative detection screenshots are included in the project report and the Google Drive folder.
 
-Key outputs to review:
+Key outputs to review
 - **runs/sports_player_detection/results.png** - YOLOv8n training metrics
 - **comparison/01_metric_comparison.png** - side-by-side model comparison
 - **output_keypoints/keypoint_results.png** - pose estimation summary
