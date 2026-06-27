@@ -1,4 +1,4 @@
-# DS5216 - Artificial Intelligence | Programming Assignment 02
+<img width="1213" height="606" alt="image" src="https://github.com/user-attachments/assets/236f6ef6-dc78-4307-8867-355cabadbb7d" /># DS5216 - Artificial Intelligence | Programming Assignment 02
 ## Football Player Detection, Tracking & Pose Estimation using YOLOv8
 
 ---
@@ -219,13 +219,23 @@ Detailed performance metrics, loss curves, Precision-Recall curves, and qualitat
 
 Key outputs to review
 - **runs/sports_player_detection/results.png** - YOLOv8n training metrics
+- <img width="1207" height="600" alt="image" src="https://github.com/user-attachments/assets/42d768a9-2b8d-43cd-aa6c-0956ee5ea0da" />
+
+- **runs/sports_player_detection_small/results.png** - YOLOv8s training metrics
+- <img width="1213" height="606" alt="image" src="https://github.com/user-attachments/assets/799027fb-3198-433e-9d85-217ba8f7a024" />
+
 - **comparison/01_metric_comparison.png** - side-by-side model comparison
+- <img width="1012" height="607" alt="image" src="https://github.com/user-attachments/assets/b0624abf-f31c-4cc5-a3a9-85c4e7fc374e" />
+
 - **output_keypoints/keypoint_results.png** - pose estimation summary
+- <img width="197" height="248" alt="image" src="https://github.com/user-attachments/assets/b48c08e7-a67b-4280-9a5e-f6e6d1342857" />
+- <img width="541" height="450" alt="image" src="https://github.com/user-attachments/assets/41243596-6b33-46c3-9f14-70406ecae3c3" />
+
 - **06 - Player Detection [Bounding Box].avi** (Drive) - final annotated video
+- <img width="427" height="252" alt="image" src="https://github.com/user-attachments/assets/6bf7c9f9-b487-4010-806d-d3e591db0872" />
   
-<img width="197" height="248" alt="image" src="https://github.com/user-attachments/assets/b48c08e7-a67b-4280-9a5e-f6e6d1342857" />
-<img width="541" height="450" alt="image" src="https://github.com/user-attachments/assets/41243596-6b33-46c3-9f14-70406ecae3c3" />
-<img width="832" height="832" alt="train_batch2201" src="https://github.com/user-attachments/assets/5e13d28e-97f9-4fc4-8434-c2b0d4a2cd21" />
+
+
 
 ---
 
