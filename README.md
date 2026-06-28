@@ -170,15 +170,11 @@ Code_PAS02/
 ├── 03_keypoint_pose.ipynb        
 ├── 04_model_comparison.ipynb    
 │
-├── dataset/
+├── dataset/                                  #This means not the dataset, the model comparison results
 │   ├── images/
 │   │   ├── train/
 │   │   ├── val/
-│   │   └── test/
-│   ├── labels/
-│   │   ├── train/
-│   │   ├── val/
-│   │   └── test/
+│   │   └── test/ 
 │   ├── data.yaml                 
 │   ├── test_results.csv          
 │   ├── runs/
@@ -186,8 +182,7 @@ Code_PAS02/
 │   │   └── sports_player_detection_small/ 
 │   └── comparison/               
 │
-├── Football/
-│   ├── Football 01.mp4 ... Football 12.mp4
+├── Football/                                 #Under this folder player keypoints detection output and their screenshots are there.
 │   ├── output_keypoints/         
 │   └── screenshots/              
 │
