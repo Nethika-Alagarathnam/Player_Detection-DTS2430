@@ -165,10 +165,10 @@ Both models are evaluated on the same test split using model.val(split = "test")
 ```
 Code_PAS02/
 │
-├── 01_extract_frames.ipynb       # Frame extraction from raw videos
-├── 02_train_yolov8.ipynb         # Dataset prep + YOLOv8n training
-├── 03_keypoint_pose.ipynb        # Pose estimation with YOLOv8n-pose
-├── 04_model_comparison.ipynb     # YOLOv8s training + model comparison
+├── 01_extract_frames.ipynb       
+├── 02_train_yolov8.ipynb         
+├── 03_keypoint_pose.ipynb        
+├── 04_model_comparison.ipynb    
 │
 ├── dataset/
 │   ├── images/
@@ -180,18 +180,18 @@ Code_PAS02/
 │   │   ├── val/
 │   │   └── test/
 │   ├── data.yaml                 
-│   ├── test_results.csv          # YOLOv8n test set metrics
+│   ├── test_results.csv          
 │   ├── runs/
-│   │   ├── sports_player_detection/       # YOLOv8n training outputs
-│   │   └── sports_player_detection_small/ # YOLOv8s training outputs
-│   └── comparison/               # Cross-model comparison outputs
+│   │   ├── sports_player_detection/       
+│   │   └── sports_player_detection_small/ 
+│   └── comparison/               
 │
 ├── Football/
 │   ├── Football 01.mp4 ... Football 12.mp4
-│   ├── output_keypoints/         # Pose-annotated videos
-│   └── screenshots/              # Keypoint frame screenshots
+│   ├── output_keypoints/         
+│   └── screenshots/              
 │
-└── Report/                       # Report (PDF)
+└── Report/                    
 ```
 
 ---
